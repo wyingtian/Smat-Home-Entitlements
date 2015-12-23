@@ -1,0 +1,36 @@
+This submission contains three folders:
+1. src    source code folder
+
+		  test script are: 
+		  1) authData   (this should always be the first input file when run the program)
+		  2) role_test.txt
+		  3) ava_controller_test.txt
+		  4) invalidAccessToken_test.txt	
+		  5) wrong_pw_test.txt
+		  6) wrong_username_test.txt
+		  7) wrong_voiceprint_test.txt
+		  Note: Please refer to ResultReport to see the result and explaniation of running the scripts above.
+
+2. DesignDoc 
+		  1) HouseMateEntitlment Design Document
+		  2) HMES_ClassDiagram.png
+		  3) HMES_Sequence Diagram.png
+		  4) UseCase Diagram.png
+
+3. ReulstReport
+		  1) ImplementationDoc
+		  2) RoleTestResult
+		  3) LogInExceptionHandlingTestResult
+		  4) Ava_controller_testResult
+		  
+Usage:
+To compile:
+     cd to "src" folder first.
+
+     javac cscie97/asn4/housemate/controller/*.java cscie97/asn4/housemate/model/*.java cscie97/asn4/housemate/entitlement/*.java cscie97/asn4/housemate/test/*.java
+
+
+To run:
+	java -cp . cscie97.asn4.housemate.test.TestDriver authData role_test.txt 
+
+	Note:  authData should always be first argument, role_test.txt can be any of the script list above.

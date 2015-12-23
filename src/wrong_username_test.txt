@@ -1,0 +1,18 @@
+login dddebra password secret
+define house house1
+define room dining_room1 floor 1 type dining_room  house house1
+define appliance oven1 type oven room house1:dining_room1
+define appliance thermostat1 type thermostat  room house1:dining_room1
+define appliance door1 type door room house1:dining_room1
+define appliance light1 type light room house1:dining_room1
+define sensor ava2 type Ava room house1:dining_room1
+define appliance door1 type door room house1:dining_room1
+define appliance light1 type light room house1:dining_room1
+set    appliance house1:dining_room1:door1 status open value open
+set    appliance house1:dining_room1:light1 status power value on
+set    appliance house1:dining_room1:thermostat1 status power value ON
+set    appliance house1:dining_room1:oven1 status power value ON
+set    appliance house1:dining_room1:oven1 status temperature value 150
+
+
+
